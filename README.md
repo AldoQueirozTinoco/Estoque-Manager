@@ -1,2 +1,2 @@
 # Estoque Manager
- Projeto da diciplina de Sistemas Web 2 na qual desenvolvi um controlador de estoque em java.
+ Projeto da diciplina de Sistemas Web 2 na qual desenvolvi um controlador de estoque em java. O projeto implementa funções de login e cadastro de usuários com diferentes permissões, criação e manipulação de diferentes lojas com estoques de produtos únicos, manipulação dos estoques com compra e venda de produtos, informações sobre as operações realizadas no estoque sendo guardadas em registro, busca de produtos no estoque por id, nome, faixa de quantidade em estoque ou com baixa quantia em estoque e manipulação de usuários por administradores.
