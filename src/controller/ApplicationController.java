@@ -124,19 +124,31 @@ public class ApplicationController {
                     Services.cadastrar(estoque);
                     break;
                 case 2:
+                    if(!estoque.produtosEmEstoque.isEmpty()){
                     System.out.println("Qual produto deseja comprar?");
                     Services.listarProdutos(estoque);
                     escolha = scanner.nextInt();
                     Services.compra(estoque.produtosEmEstoque.get(escolha - 1),estoque);
+                    }else{
+                        System.out.println("Sem produtos em estoque!");
+                    }
                     break;
                 case 3:
+                    if(!estoque.produtosEmEstoque.isEmpty()){
                     System.out.println("Qual produto deseja vender?");
                     Services.listarProdutos(estoque);
                     escolha = scanner.nextInt();
                     Services.venda(estoque.produtosEmEstoque.get(escolha - 1 ),estoque);
+                    }else{
+                        System.out.println("Sem produtos em estoque!");
+                    }
                     break;
                 case 4:
+                    if(!estoque.produtosEmEstoque.isEmpty()){
                     Services.consulta(estoque);
+                    }else{
+                        System.out.println("Nao ha produtos em estoque!");
+                    }
                     break;
                 case 5:
                     return true;
